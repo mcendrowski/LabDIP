@@ -25,7 +25,7 @@ public class HRService {
 //        this.compensation = compensation;
 //    }
     
-    public double getAnnualCompensationForEmployee(){
+    public final double getAnnualCompensationForEmployee(){
         return this.compensation.getAnnualCompensationForEmployee();
     }
     

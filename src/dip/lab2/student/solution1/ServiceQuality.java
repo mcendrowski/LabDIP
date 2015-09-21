@@ -12,23 +12,5 @@ package dip.lab2.student.solution1;
 public enum ServiceQuality {
 
     GOOD, FAIR, POOR;
-//       @Override//       @Override
 
-    /**
-     *
-     * @return
-     */
-//    public double serviceValue() {
-//        switch (this) {
-//            case GOOD:
-//                return 0.2;
-//            case FAIR:
-//                return 0.15;
-//            case POOR:
-//                return 0.1;
-//            default:
-//                return 0;
-//
-//        }
-//    }
 }

@@ -51,7 +51,7 @@ public class HourlyEmployee implements AnnualCompensation {
     }
     
     @Override
-    public double getAnnualCompensationForEmployee(){
+    public final double getAnnualCompensationForEmployee(){
         return hourlyRate*totalHrsForYear;
     }
 }

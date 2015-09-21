@@ -1,9 +1,9 @@
 package dip.lab2;
 
 // An useful import if you need it.
-import java.text.NumberFormat;
+//import java.text.NumberFormat;
 // Another useful import if you need it.
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 /**
  * Just a test class for input and output.

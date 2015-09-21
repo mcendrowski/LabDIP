@@ -16,15 +16,15 @@ public class TipCalculator {
         this.service = service;
     }
 
-    public TippedService getService() {
+    public final TippedService getService() {
         return service;
     }
 
-    public void setService(TippedService service) {
+    public final void setService(TippedService service) {
         this.service = service;
     }
     
-    public double getTip(){
+    public final double getTip(){
         return this.service.getTip();
     }
     

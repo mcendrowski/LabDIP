@@ -1,8 +1,8 @@
 package dip.lab2.student.solution1;
 
 /**
- * An example low-level class. Does this class definition follow the DIP?
- * If not, fix it.
+ * An example low-level class. Does this class definition follow the DIP? If
+ * not, fix it.
  *
  * Any other best practice violations? Fix them too.
  *
@@ -10,9 +10,10 @@ package dip.lab2.student.solution1;
  */
 public class BaggageServiceTipCalculator implements TippedService {
 //    private static final double MIN_BILL = 0.00;
+
     private static final double MAX_BILL = 100.00;
-    private static final String BILL_ENTRY_ERR =
-            "Error: bill must be between " + MIN_BILL + " and "
+    private static final String BILL_ENTRY_ERR
+            = "Error: bill must be between " + MIN_BILL + " and "
             + MAX_BILL;
 //    private static final double GOOD_RATE = 0.20;
 //    private static final double FAIR_RATE = 0.15;
@@ -29,16 +30,16 @@ public class BaggageServiceTipCalculator implements TippedService {
 //        this.serviceQuality=q; //setServiceRating(q); // perform validation
         this.setServiceRating(q);
 //        this.setBagCount(bags);
-        this.bagCount=bags;
+        this.bagCount = bags;
 
         baseTipPerBag = 1.00; // set default value
     }
 
     @Override
-    public double getTip() {
+    public final double getTip() {
         double tip = 0.00; // always initialize local variables
 
-        switch(serviceQuality) {
+        switch (serviceQuality) {
             case GOOD:
                 tip = baseTipPerBag * bagCount * (1 + GOOD_RATE);
                 break;
@@ -60,34 +61,33 @@ public class BaggageServiceTipCalculator implements TippedService {
     }
 
 //    @Override
-
     /**
      *
      * @return
      */
 //        @Override
-    public ServiceQuality getServiceQuality() {
+    public final ServiceQuality getServiceQuality() {
         return serviceQuality;
     }
 
-    public int getBagCount() {
+    public final int getBagCount() {
         return bagCount;
     }
 
     public final void setBagCount(int bagCount) {
-        if(bagCount < 0) {
+        if (bagCount < 0) {
             throw new IllegalArgumentException(
                     "bag count must be greater than or equal to zero");
         }
         this.bagCount = bagCount;
     }
 
-    public double getBaseTipPerBag() {
+    public final double getBaseTipPerBag() {
         return baseTipPerBag;
     }
 
-    public void setBaseTipPerBag(double baseTipPerBag) {
-        if(baseTipPerBag < 0) {
+    public final void setBaseTipPerBag(double baseTipPerBag) {
+        if (baseTipPerBag < 0) {
             throw new IllegalArgumentException(
                     "error: base tip must be greater than or equal to zero");
         }
