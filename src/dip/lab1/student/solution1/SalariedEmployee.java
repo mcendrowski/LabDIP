@@ -50,7 +50,7 @@ public class SalariedEmployee implements AnnualCompensation {
     }
     
     @Override
-    public double getAnnualCompensationForEmployee(){
+    public final double getAnnualCompensationForEmployee(){
         return this.annualSalary+this.annualBonus;
     }
 }
