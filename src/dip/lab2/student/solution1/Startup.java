@@ -2,9 +2,9 @@ package dip.lab2.student.solution1;
 
 // An useful import if you need it.
 
-import java.text.NumberFormat;
+//import java.text.NumberFormat;
 // Another useful import if you need it.
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 
 
 
@@ -33,8 +33,8 @@ public class Startup {
         TipCalculator serv1 = new TipCalculator(bgs);
         TipCalculator serv2 = new TipCalculator(fds);
         
-        System.out.println(serv1.getTip());
-        System.out.println(serv2.getTip());
+        System.out.println("Tip for baggage service equals: "+serv1.getTip());
+        System.out.println("Tip for food service equals: "+serv2.getTip());
     }
     
     
