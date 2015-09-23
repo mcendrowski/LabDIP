@@ -13,10 +13,12 @@ public interface TippedService {
 
 //    ServiceQuality getServiceQuality();
 
-    public static final double GOOD_RATE = 0.20;
-    public static final double FAIR_RATE = 0.15;
-    public static final double POOR_RATE = 0.10;
-    public static final double MIN_BILL = 0.00;
+
+// I decided to put rates back to the sub classes as I think premise that the level of service should be gratified with the same percentage for each type of service is too rigid
+//    public static final double GOOD_RATE = 0.20;
+//    public static final double FAIR_RATE = 0.15;
+//    public static final double POOR_RATE = 0.10;
+//    public static final double minBill = 0.00;
     
     
     
