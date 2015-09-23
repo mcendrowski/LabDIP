@@ -10,7 +10,7 @@ package dip.lab1.student.solution1;
  *
  * @author MCENDROWSKI
  */
-public interface AnnualCompensation {
+public interface Employee {
 
     public abstract double getAnnualCompensationForEmployee();
     

@@ -10,7 +10,7 @@ package dip.lab1.student.solution1;
  *
  * @author MCENDROWSKI
  */
-public class HourlyEmployee implements AnnualCompensation {
+public class HourlyEmployee implements Employee {
 
     private double hourlyRate;
     private double totalHrsForYear;

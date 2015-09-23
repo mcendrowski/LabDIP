@@ -10,7 +10,7 @@ package dip.lab1.student.solution1;
  *
  * @author MCENDROWSKI
  */
-public class SalariedEmployee implements AnnualCompensation {
+public class SalariedEmployee implements Employee {
     private double annualSalary;
     private double annualBonus;
 

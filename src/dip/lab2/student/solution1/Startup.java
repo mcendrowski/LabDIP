@@ -30,11 +30,13 @@ public class Startup {
         BaggageServiceTipCalculator bgs = new BaggageServiceTipCalculator(ServiceQuality.GOOD,3);
         FoodServiceTipCalculator fds = new FoodServiceTipCalculator(ServiceQuality.FAIR,30);
         
-        TipCalculator serv1 = new TipCalculator(bgs);
-        TipCalculator serv2 = new TipCalculator(fds);
+        TipManager serv1 = new TipManager(bgs);
+        TipManager serv2 = new TipManager(fds);
         
-        System.out.println("Tip for baggage service equals: "+serv1.getTip());
-        System.out.println("Tip for food service equals: "+serv2.getTip());
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        
+        System.out.println("Tip for baggage service equals: "+nf.format(serv1.getTip()));
+        System.out.println("Tip for food service equals: "+nf.format(serv2.getTip()));
     }
     
     

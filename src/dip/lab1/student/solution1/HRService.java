@@ -11,17 +11,17 @@ package dip.lab1.student.solution1;
  * @author MCENDROWSKI
  */
 public class HRService {
-    private AnnualCompensation compensation;
+    private Employee compensation;
 
-    public HRService(AnnualCompensation compensation) {
+    public HRService(Employee compensation) {
         this.compensation = compensation;
     }
 
-//    public AnnualCompensation getCompensation() {
+//    public Employee getCompensation() {
 //        return compensation;
 //    }
 //
-//    public void setCompensation(AnnualCompensation compensation) {
+//    public void setCompensation(Employee compensation) {
 //        this.compensation = compensation;
 //    }
     

@@ -9,10 +9,10 @@ package dip.lab2.student.solution1;
  *
  * @author MCENDROWSKI
  */
-public class TipCalculator {
+public class TipManager {
     private TippedService service;
 
-    public TipCalculator(TippedService service) {
+    public TipManager(TippedService service) {
         this.service = service;
     }
 

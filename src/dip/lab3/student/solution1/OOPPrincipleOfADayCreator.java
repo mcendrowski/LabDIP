@@ -11,12 +11,12 @@ import java.util.Random;
  *
  * @author MCENDROWSKI
  */
-public class OOPPrincipleOfADay implements MessageCreator {
+public class OOPPrincipleOfADayCreator implements MessageCreator {
 //    private String message;
     private String messages[] = new String[6];
     private String message;
     
-    public OOPPrincipleOfADay(){
+    public OOPPrincipleOfADayCreator(){
         messages[0]="Open/Closed Principle:\nClasses should be open to extension but close to change\n"+
 "(adding new concrete method is allowed,\n" +
 "but changing method or overriding them not)";

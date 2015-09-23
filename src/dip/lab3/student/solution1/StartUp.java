@@ -12,7 +12,7 @@ package dip.lab3.student.solution1;
 public class StartUp {
     public static void main(String[] args) {
         
-        OOPPrincipleOfADay creator = new OOPPrincipleOfADay();
+        OOPPrincipleOfADayCreator creator = new OOPPrincipleOfADayCreator();
 //      WelcomeMessage creator = new WelcomeMessage();      
 
       

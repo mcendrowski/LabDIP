@@ -9,11 +9,11 @@ package dip.lab3.student.solution1;
  *
  * @author MCENDROWSKI
  */
-public class WelcomeMessage implements MessageCreator {
+public class WelcomeMessageCreator implements MessageCreator {
 
     private String message;
 
-    public WelcomeMessage() {
+    public WelcomeMessageCreator() {
         message = "Hello. Have a nice day.";
 
     }
